@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Tiro+Tamil:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #d8d1bd;
+}
+.page-1 {
+  min-height: 100dvh;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: #d8d1bd;
+  z-index: 11;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
+.nav-bar-l {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-bar-l h6 {
+  height: 100%;
+  padding: 2vh 6vw;
+  font-size: 22px;
+  font-weight: 700;
+  border: 2px solid black;
+  border-top: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.nav-bar-l h6:hover {
+  font-style: italic;
+  perspective: 100px;
+}
+
+.nav-bar-r h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #767f64;
+  color: #d8d1bd;
+  width: 230px;
+  height: 97px;
+  border-radius: 400%;
+  margin-right: 100px;
+  transform: rotate(10deg);
+  margin-top: 20px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.nav-bar-r h2:hover {
+  font-style: italic;
+  perspective: 100px;
+}
+
+.nav-bar img {
+  height: 2rem;
+  padding: 0 1vw;
+}
+.web-name-info {
+  padding: 2vh;
+}
+
+.web-name-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+}
+
+.web-name-info-bottom h6 {
+  font-size: 27px;
+  font-weight: 400;
+  color: rgb(29, 23, 5);
+  font-family: "Tiro Tamil", serif;
+}
+
+.page-1-video {
+  position: relative;
+  padding: 4vh 1vw;
+}
+.page-1-video video {
+  width: 100%;
+  height: 60vh;
+  border-radius: 1rem;
+  object-fit: cover;
+  background: url("https://assets-global.website-files.com/63224dab1f0bdc58b0e4c37f/63517320f71ec2f37d0c942e_grain-pattern.png");
+}
+.page-1-img {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-1-img img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: brightness(60%);
+}
+.page-1-img p {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  font-weight: 400;
+  z-index: 5;
+  color: #d8d1bd;
+}
+
+/* //page-2 css:  */
+
+.page-2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1.5vw 2vw;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.inner-info {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-top: 5vw;
+}
+
+.external-info {
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.main-photo-gallary {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  padding: 0vh 1vw;
+}
+
+.grid-block-wrapper {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+  margin: 2vh 2vw;
+}
+
+#grid-block {
+  display: flex;
+  border: 3px solid black;
+  border-radius: 1em;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+.firstl-heart-img {
+  padding: 12px;
+}
+.firstl-heart-img img {
+  width: 50px;
+}
+
+.firstl-h1 {
+  padding: 12px;
+}
+.firstl-h1 h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.firstl-h4 {
+  padding: 12px;
+}
+.firstl-h4 h4 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.inner-img-div {
+  position: relative;
+  height: 20rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+#fix-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.first-right-text-content {
+  padding: 12px;
+}
+.first-right-text-content h1 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  font-style: italic;
+}
+
+.first-right-text-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+}
+
+.inner-right-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6em;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://assets-global.website-files.com/63224dab1f0bdc58b0e4c37f/63517320f71ec2f37d0c942e_grain-pattern.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.32;
+}
+
+#second-grid-image {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 200;
+}
+/* 3rd grid start here  */
+
+.third-grid-block-wrapper {
+  margin: 3vh 2vw;
+}
+.third-grid-block-wrapper {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+.third-grid-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.third-grid-block-wrapper h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  padding: 12px;
+}
+
+/* 4rt grid start here  */
+
+.fourth-grid-block-wrapper {
+  grid-area: span 1 / span 4 / span 1 / span 4;
+  margin: 3vh 0vw;
+}
+
+.fourth-grid-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.fourth-grid-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  padding: 12px;
+}
+.fourth-inner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 5th grid starts here  */
+
+.fifth-grid-block-wrapper {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+  margin: 3svh 2vw;
+}
+
+.fifth-block-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.fifth-block-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  padding: 12px;
+}
+
+.fifth-img-child-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* 6th grid start  */
+
+.sixth-grid-block-wrapper {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+  margin: 3vh 0vw;
+}
+
+.sixth-grid-block-wrapper h1 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  font-style: italic;
+  padding: 12px;
+}
+
+.sixth-grid-block-wrapper h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  font-style: italic;
+  padding: 12px;
+}
+
+.sixth-grid-img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* 7th grid start here  */
+
+.seventh-grid-block-wrapper {
+  grid-area: span 1 / span 4 / span 1 / span 4;
+  margin: 3vh 2vw;
+}
+
+.seventh-block-content img {
+  height: 80px;
+  padding: 12px;
+}
+
+.seventh-block-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.seventh-block-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  padding: 12px;
+}
+
+.seventh-grid-img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* 8th grid start here  */
+
+.eighth-grid-block-wrapper {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+  margin: 3vh 0vw;
+}
+
+.eighth-grid-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.eighth-grid-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Tiro Tamil", serif;
+  padding: 12px;
+}
+
+/* // page-3 start here  */
+.page-3 {
+  min-height: 100vh;
+  width: 100vw;
+  border-bottom: 3px solid black;
+  padding-bottom: 4vh;
+}
+
+.fst-image {
+  padding: 2vh 2vw;
+}
+
+.fst-image img {
+  width: 75%;
+}
+
+.inner-scd-img-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.inner-scd-img-part .img-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40%;
+  padding: 1vw;
+}
+.img-1-txt {
+  position: absolute;
+  width: 70%;
+  color: #d8d1bd;
+}
+
+.inner-scd-img-part .img-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1vw;
+  width: 60%;
+}
+.img-2-txt {
+  position: absolute;
+  width: 70%;
+  color: #d8d1bd;
+}
+
+.inner-scd-img-part .img-1 img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.inner-scd-img-part .img-2 img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* page-4 start here */
+
+.page-4 {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2vh 3vw;
+}
+.main-page4-para {
+  display: flex;
+  margin: 3vw;
+}
+.main-page4-para .text-section {
+  width: 50%;
+}
+.main-page4-para .text-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 53px;
+}
+.main-page4-para .text-section p {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  font-family: "Tiro Tamil", serif;
+}
+.main-page4-para .image-section {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-page4-para .image-section .rainbow-image img {
+  height: 15vh;
+  position: relative;
+}
+.main-page4-para .image-section .sun-image img {
+  position: relative;
+  height: 25vh;
+  top: 50%;
+}
+.main-page4-para .image-section .star-image img {
+  position: relative;
+  height: 25vh;
+  top: 10%;
+}
+
+.page-4-photo-gallary {
+  width: 100%;
+}
+
+.page-4-grid-div {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 0.75fr 1fr 0.5fr;
+  grid-auto-columns: 1fr;
+  padding: 24px;
+  display: grid;
+}
+.black-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+.black-layer-for-photo-4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.2;
+}
+.photo-galley-img-container:hover .black-layer {
+  opacity: 0;
+}
+.photo-galley-img-container {
+  border-radius: 0.6em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.page-4-grid-div .photo-1 {
+  grid-area: span 2 / span 1 / span 2 / span 1;
+  align-self: stretch;
+}
+.page-4-grid-div .photo-1 img {
+  height: 100%;
+}
+.page-4-grid-div .photo-2 {
+  grid-area: span 2 / span 1 / span 2 / span 1;
+  align-self: stretch;
+}
+.page-4-grid-div .photo-2 img {
+  height: 100%;
+}
+.page-4-grid-div .photo-3 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: stretch;
+}
+.page-4-grid-div .photo-3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .6em;
+}
+.page-4-grid-div .photo-4 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: stretch;
+}
+.page-4-grid-div .photo-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .6em;
+}
+.inner-photo-4-text{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.inner-photo-4-text h4{
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255, 255, 255)  ;
+}

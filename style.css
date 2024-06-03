@@ -83,14 +83,20 @@ body {
   height: 2rem;
   padding: 0 1vw;
 }
+
 .web-name-info {
   padding: 2vh;
+}
+
+.web-name-info-imgdiv{
+  overflow-y:hidden;
 }
 
 .web-name-info-bottom {
   display: flex;
   justify-content: space-between;
   padding: 1vh;
+  overflow-y: hidden;
 }
 
 .web-name-info-bottom h6 {

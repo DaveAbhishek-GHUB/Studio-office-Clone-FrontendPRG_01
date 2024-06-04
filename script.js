@@ -68,3 +68,17 @@ gsap.from(".star-image img", {
     scale:0,
     scrollTrigger:".rainbow-image"
 })
+
+gsap.from(".img-1", {
+    scale:0,
+    scrollTrigger:".img-1"
+})
+
+gsap.from(".main-photo-page-5", {
+    opacity:0,
+    scrollTrigger:".main-photo-page-5"
+})
+gsap.from(".page-5-photo-section .main-photo-page-5 img", {
+    opacity:0,
+    scrollTrigger:".page-5-photo-section .main-photo-page-5 img"
+})
